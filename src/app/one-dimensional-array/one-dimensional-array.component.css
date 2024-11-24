@@ -1,0 +1,80 @@
+/* Загальний стиль для компонента */
+.one-dimensional-array {
+    max-width: 500px;
+    margin: 20px auto; /* Центрування компонента */
+    padding: 20px;
+    background-color: #e7e1ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для об'єму */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Заголовок */
+  .one-dimensional-array h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Поле вводу */
+  .one-dimensional-array input[type="text"] {
+    width: calc(100% - 20px); /* Робить ширину динамічною */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Враховує внутрішній відступ */
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Список результатів */
+  .one-dimensional-array ul {
+    list-style-type: none; /* Прибирає маркери списку */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .one-dimensional-array li {
+    background-color: #e8f5e9; /* Світло-зелений фон для пунктів */
+    color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Плавна зміна кольору */
+  }
+  
+  .one-dimensional-array li:hover {
+    background-color: #c8e6c9; /* Темніший зелений при наведенні */
+  }
+  
+  /* Повідомлення про відсутність результатів */
+  .one-dimensional-array p {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  /* Адаптивність */
+  @media (max-width: 480px) {
+    .one-dimensional-array {
+      padding: 15px;
+    }
+  
+    .one-dimensional-array h2 {
+      font-size: 18px;
+    }
+  
+    .one-dimensional-array input[type="text"] {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .one-dimensional-array li {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  

@@ -1,0 +1,15 @@
+/* header.component.css */
+.header {
+    text-align: center;
+    margin: 20px 0;
+   
+    background: linear-gradient(135deg, #ff7e5f, #7f7bfe);
+    padding: 20px;
+    border-radius: 8px; /* Закруглені кути */
+    color: white; /* Текст білий для контрасту */
+  }
+  
+  h1, h2 {
+    margin: 0;
+  }
+  

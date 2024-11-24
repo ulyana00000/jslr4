@@ -1,0 +1,16 @@
+<div class="one-dimensional-array">
+    <h2>Фільтрація прізвищ</h2>
+    <label>Введіть букву для фільтрації:</label>
+    <input type="text" [(ngModel)]="letter" (input)="filterNames()" maxlength="1" placeholder="Наприклад: І">
+    
+    <div *ngIf="filteredNames.length > 0">
+      <h3>Прізвища, що починаються з букви "{{ letter }}":</h3>
+      <ul>
+        <li *ngFor="let name of filteredNames">{{ name }}</li>
+      </ul>
+    </div>
+    <div *ngIf="filteredNames.length === 0 && letter">
+      <p>Прізвищ не знайдено.</p>
+    </div>
+  </div>
+  

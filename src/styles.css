@@ -1,0 +1,111 @@
+/* Загальні стилі для компонента одновимірного масиву */
+.one-dimensional-array {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .one-dimensional-array h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .one-dimensional-array .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .one-dimensional-array label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .one-dimensional-array input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .one-dimensional-array button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .one-dimensional-array button:hover {
+    background-color: #45a049;
+  }
+  
+  .one-dimensional-array p {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  
+  /* Загальні стилі для компонента двовимірного масиву */
+.two-dimensional-array {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #e9f7f6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .two-dimensional-array h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .two-dimensional-array .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .two-dimensional-array label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .two-dimensional-array input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .two-dimensional-array button {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .two-dimensional-array button:hover {
+    background-color: #1976d2;
+  }
+  
+  .two-dimensional-array p {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+  }
+  

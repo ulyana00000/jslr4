@@ -1,0 +1,54 @@
+<div class="two-dimensional-array">
+    <h2>Сума елементів двовимірного масиву з непарними індексами</h2>
+  
+    <!-- Введення розмірів -->
+    <div class="input-fields">
+      <label for="rows">Кількість рядків (1...7):</label>
+      <input
+        id="rows"
+        type="number"
+        [(ngModel)]="rows"
+        placeholder="Введіть n"
+        min="1"
+        max="7"
+      />
+  
+      <label for="columns">Кількість стовпців (1...10):</label>
+      <input
+        id="columns"
+        type="number"
+        [(ngModel)]="columns"
+        placeholder="Введіть m"
+        min="1"
+        max="10"
+      />
+  
+      <button (click)="generateArray()">Створити матрицю</button>
+    </div>
+  
+    <!-- Повідомлення про помилку -->
+    <div *ngIf="errorMessage" class="error-message">
+      <p>{{ errorMessage }}</p>
+    </div>
+  
+    <!-- Відображення матриці -->
+    <div *ngIf="array.length > 0" class="array-display">
+      <h3>Двовимірний масив:</h3>
+      <table>
+        <tr *ngFor="let row of array">
+          <td *ngFor="let cell of row">{{ cell }}</td>
+        </tr>
+      </table>
+    </div>
+  
+    <!-- Кнопка обчислення суми -->
+    <button (click)="calculateSum()" [disabled]="!array.length">
+      Обчислити суму
+    </button>
+  
+    <!-- Результати -->
+    <div *ngIf="sum > 0" class="result">
+      <h3>Сума елементів з непарними індексами: {{ sum }}</h3>
+    </div>
+  </div>
+  

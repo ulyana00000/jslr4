@@ -1,0 +1,59 @@
+/* Загальний стиль для навігації */
+div {
+    display: flex;
+    justify-content: center; /* Центрування навігації */
+    align-items: center;
+    gap: 20px; /* Відстань між елементами */
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стиль для посилань */
+  div a {
+    text-decoration: none; /* Прибираємо підкреслення */
+    color: #333; /* Колір тексту */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Плавний перехід при наведенні */
+  }
+  
+  /* Стиль для активного посилання */
+  div a.active {
+    background-color: #007bff; /* Синій фон */
+    color: #fff; /* Білий текст */
+  }
+  
+  /* Стиль для посилань при наведенні */
+  div a:hover {
+    background-color:  #7f7bfe;
+    color: #fff;
+  }
+  
+  /* Адаптивність */
+  @media (max-width: 768px) {
+    div {
+      flex-direction: column; /* Вертикальне розташування */
+      gap: 10px; /* Менший відступ між посиланнями */
+    }
+  
+    div a {
+      font-size: 14px; /* Зменшений розмір тексту */
+      width: 100%; /* Посилання займають всю ширину контейнера */
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    div {
+      padding: 5px 10px; /* Зменшений внутрішній відступ */
+    }
+  
+    div a {
+      font-size: 12px; /* Ще менший розмір тексту */
+      padding: 8px 10px; /* Зменшений відступ усередині посилань */
+    }
+  }
+  

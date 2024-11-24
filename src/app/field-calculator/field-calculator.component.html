@@ -1,0 +1,58 @@
+<div class="calculator">
+  <h2>Оберіть тип обчислення:</h2>
+  <label>
+    <input
+      type="radio"
+      name="calculationType"
+      value="base"
+      (change)="selectedForm = 'base'"
+      [checked]="selectedForm === 'base'"
+    />
+    Базовий клас (Field)
+  </label>
+  <label>
+    <input
+      type="radio"
+      name="calculationType"
+      value="child"
+      (change)="selectedForm = 'child'"
+      [checked]="selectedForm === 'child'"
+    />
+    Нащадок (PotatoField)
+  </label>
+
+  <!-- Форма для базового класу -->
+  <div *ngIf="selectedForm === 'base'">
+    <h3>Базовий клас: Поле</h3>
+    <label>Назва поля:</label>
+    <input type="text" [(ngModel)]="fieldName" placeholder="Наприклад: Поле зернових" />
+
+    <label>Вага насіння на одиницю площі (r):</label>
+    <input type="text" [(ngModel)]="seedWeight" placeholder="1.5" />
+
+    <label>Коефіцієнт врожайності (k):</label>
+    <input type="text" [(ngModel)]="yieldCoefficient" placeholder="2.5" />
+  </div>
+
+  <!-- Форма для класу-нащадка -->
+  <div *ngIf="selectedForm === 'child'">
+    <h3>Нащадок: Картопляне поле</h3>
+    <label>Назва поля:</label>
+    <input type="text" [(ngModel)]="fieldName" placeholder="Наприклад: Картопляне поле" />
+
+    <label>Вага насіння на одиницю площі (r):</label>
+    <input type="text" [(ngModel)]="seedWeight" placeholder="1.5" />
+
+    <label>Площа поля (S):</label>
+    <input type="text" [(ngModel)]="fieldArea" placeholder="100" />
+
+    <label>Коефіцієнт врожайності (k):</label>
+    <input type="text" [(ngModel)]="yieldCoefficient" placeholder="3" />
+  </div>
+
+  <button (click)="calculate()">Обчислити</button>
+
+  <h3>Результати:</h3>
+  <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+  <p *ngIf="result && !errorMessage">{{ result }}</p>
+</div>
